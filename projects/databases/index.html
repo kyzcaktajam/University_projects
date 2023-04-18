@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang = "pl">
+<head>
+    <meta charset = "utf-8"/>
+    <title> Warsztat samochodowy</title>
+</head>
+<body>
+    <h1> Witaj w warsztacie! <h1/>
+    
+    <form action = "pokazsam.php">
+        <input type = "submit" value = "Pokaż samochody">
+    </form>
+    
+    <form action = "pokazmech.php">
+        <input type = "submit" value = "Pokaż mechaników">
+    </form>
+    
+    <h2> Dodaj samochód </h2>
+    <form action = "dodajsam.php" method = "post">
+        Marka:<br/>
+        <input type = "text" name = "marka"/>
+	    <br/> <br/>
+        Wartość:<br/>
+        <input type = "number" name = "wartosc">
+        <br/><br/>
+        <input type = "submit" value = "Dodaj samochód">
+    </form>      
+    <br/><br/>
+    <h2> Dodaj usterkę </h2>
+    <form action = "dodajust.php" method = "post">
+        Id samochodu:<br/>
+        <input type = "text" name = "id_sam"/>
+	    <br/> <br/>
+        Wadliwa część:<br/>
+        <input type = "text" name = "czesc">
+        <br/><br/>
+        Procent zniszczenia (liczba naturalna 1 - 100):<br/>
+        <input type = "number" name = "zniszczenie" min = "1" max = "100">
+        <br/><br/>
+        Koszt naprawy:<br/>
+        <input type = "number" name = "koszt">
+        <br/><br/>
+        <input type = "submit" value = "Dodaj usterkę">
+    </form>      
+    <br/><br/>
+    <h2> Wycena naprawy </h2>
+    <form action = "naprawa.php" method = "post">
+        Id samochodu: <br/>
+        <input type = "text" name = "id_sam">
+        <br/><br/>
+        <input type = "submit" value = "OK">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
